@@ -4,5 +4,3 @@ use WireElements\WireExtender\Http\Controllers\EmbedController;
 use WireElements\WireExtender\Http\Controllers\InjectController;
 
 Route::any('livewire/embed', EmbedController::class);
-
-Route::any('livewire/inject', InjectController::class);
