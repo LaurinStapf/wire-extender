@@ -66,7 +66,7 @@ function waitForLivewireAndStart() {
 }
 
 async function startLivewire(assets) {
-    Livewire.interceptRequeset(({ request }) => {
+    Livewire.interceptRequest(({ request }) => {
         request.options.headers['X-Wire-Extender'] = '1';
         request.options.credentials = 'include';
     });
